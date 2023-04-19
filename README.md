@@ -5,6 +5,10 @@ Jian Carlo Gallego
 # Introducción
 A continuación se expone el desarrolloro de una api cliente-servidor hecha en python que permite realizar peticiones GET, HEAD y POST en la versión 1.1 de HTTP
 
+# Configuración
+
+En caso de bajarse el proyecto local, se debe correr en la rama "local" puesto que en esta rama se le solicita al usuario por la terminal
+
 # Desarrollo
 
 Aquí podremos ver cómo funciona el código con su respectiva documentación en cada método.
@@ -156,6 +160,8 @@ HEAD a la url
 # Conclusiones
 
 Podríamos concluir que nuestra aplicación es un servidor que permite el intercambio de información en el formato http y que este es utilizado por la mayoría de páginas web que hay en la internet. Además, de que su implementación en un lenguaje como python puede llegar a ser sencilla y óptima a la vez.
+
+El protocolo http comprime en cierta medida el tamaño de los archivos, esto lo identificamos ya que las imágenes tienen las medidas aproximadas de los casos de prueba, pero a la hora de ver el size en postman, vemos que es mucho menor.
 
 # Referencias
 
