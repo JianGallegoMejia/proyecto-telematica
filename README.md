@@ -7,7 +7,21 @@ A continuación se expone el desarrolloro de una api cliente-servidor hecha en p
 
 # Configuración
 
-En caso de bajarse el proyecto local, se debe correr en la rama "local" puesto que en esta rama se le solicita al usuario por la terminal
+En caso de bajarse el proyecto local, se debe correr en la rama "runlucal" puesto que en esta rama se le solicita al usuario por la terminal el puerto, la ruta del logfile (log.txt) y la ruta de las imágenes (Paginas/)
+
+Comando para correr el proyecto local:
+Linux: python3 Servidor.py 1234 log.txt Paginas/
+Windows: python Servidor.py 1234 log.txt Paginas/
+Importante estar ubicado en la raíz
+
+El proyecto se desplegó en amazon en la siguiente ip y puerto: http://3.144.3.31:8501/, aquí se pueden hacer pruebas, importante estar en la rama master 
+Ejemplo de la petición en AWS: http://3.144.3.31:8501/Paginas/Caso4.html
+
+![alt text](https://assets.hibot.us/images/dev-content-based/666f5f0bad467fde1066e60a06766f9c463760cc9494614a57897db6f25e7e64@jpg)
+
+![alt text](https://assets.hibot.us/images/dev-content-based/a35090cd6c753f31d29816bf026a9ead3e134b8b8eaabb1f210855d16feca6fa@jpg)
+
+
 
 # Desarrollo
 
@@ -166,3 +180,4 @@ El protocolo http comprime en cierta medida el tamaño de los archivos, esto lo 
 # Referencias
 
 https://www.postman.com/
+https://www.escribecodigo.com/sockets-en-python/
