@@ -1,17 +1,22 @@
 import socket
+import sys
 import os
 from threading import Thread
 
 #Argumentos de entrada $./server <HTTP PORT> <Log File> <DocumentRootFolder>
+puerto = int(sys.argv[1])
+log_file = sys.argv[2]
+document_root = sys.argv[3]
+
 #Archivo Log que voy a crear
-log = open("log.txt", 'w')
+log = open(log_file, 'w')
 
 # Creamos un objeto socket para la conexión
 servidor = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Definimos la dirección IP y el puerto del servidor
 ip_servidor = '0.0.0.0'
-puerto_servidor = 8501
+puerto_servidor = puerto
 
 # Enlazamos el socket al servidor
 servidor.bind((ip_servidor, puerto_servidor))
@@ -20,7 +25,7 @@ servidor.bind((ip_servidor, puerto_servidor))
 servidor.listen()
 
 def manejar_solicitud(cliente):
-    log = open("log.txt", 'a')
+    log = open(log_file, 'a')
 
     # Recibimos la solicitud del cliente
     solicitud = cliente.recv(1024).decode()
@@ -31,13 +36,13 @@ def manejar_solicitud(cliente):
 
     # Si la ruta es '/', servimos la página de inicio
     if ruta_archivo == '/':
-        ruta_archivo = '/' + 'Paginas/' + '/Caso1.html'
+        ruta_archivo = '/' + document_root + '/Caso1.html'
     elif ruta_archivo == '/Caso2':
-        ruta_archivo = '/' + 'Paginas/' + '/Caso2.html'
+        ruta_archivo = '/' + document_root + '/Caso2.html'
     elif ruta_archivo == '/Caso3':
-        ruta_archivo = '/' + 'Paginas/' + '/Caso3.html'
+        ruta_archivo = '/' + document_root + '/Caso3.html'
     elif ruta_archivo == '/Caso4':
-        ruta_archivo = '/' + 'Paginas/' + '/Caso4.html'
+        ruta_archivo = '/' + document_root + '/Caso4.html'
         
     # Manejamos la solicitud en función del método HTTP
     metodo = solicitud.split()[0]
