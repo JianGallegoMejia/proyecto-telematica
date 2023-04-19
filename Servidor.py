@@ -1,7 +1,5 @@
 import socket
-import sys
 import os
-import time
 from threading import Thread
 
 #Argumentos de entrada $./server <HTTP PORT> <Log File> <DocumentRootFolder>
