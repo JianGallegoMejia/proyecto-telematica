@@ -129,7 +129,33 @@ while True:
 
 Para probar nuestro servidor se ejecutaron las peticiones mediante postman
 
+GET a la página 1 con algunos hipertextos y una imagen.
+![alt text](https://assets.hibot.us/images/dev-content-based/926444ab1a17dfb30f4bf48b7623feaedf6297676bf34c37dedbf4c9dbe17c82@jpg)
+
+GET a la página 2 con algunos hipertextos y múltiples imágenes.
+![alt text](https://assets.hibot.us/images/dev-content-based/f974b41cfc2475558422735b564488198063a34701c4ef155f66b1971e87b53b@jpg)
+
+GET a la página 3 que contiene un solo archivo de aproximadamente un tamaño de 1MB.
+![alt text](https://assets.hibot.us/images/dev-content-based/13baea0e29db3b01d8d2bb8fb401c3bfbb555a9928730c758da5fe6c660e89b0@jpg)
+
+GET a la página 4 que contiene múltiples archivos y que aproximadamente tiene un tamaño de 1MB
+![alt text](https://assets.hibot.us/images/dev-content-based/ddf6cba8e2a4cc11f9ca7d224f9045574855a4f3b3ee92b610717d2df276ef12@jpg)
+
+GET a url desconocida
+![alt text](https://assets.hibot.us/images/dev-content-based/2822c18e61f1801231d04dc38d9515ff3a69877c649bfdde4713bb5cb113c4e0@jpg)
+
+POST a la url
+![alt text](https://assets.hibot.us/images/dev-content-based/9972387a20ad55ec1b5eabe18a6c6b35d22662a66060743e19beefa60ed3ea56@jpg)
+
+HEAD a la url
+![alt text](https://assets.hibot.us/images/dev-content-based/df86c011a1059ece7cd1497d261cf43a015c2dd14b77d0fe7f1b445399030b07@jpg)
+
+
+
+
 # Conclusiones
+
+Podríamos concluir que nuestra aplicación es un servidor que permite el intercambio de información en el formato http y que este es utilizado por la mayoría de páginas web que hay en la internet. Además, de que su implementación en un lenguaje como python puede llegar a ser sencilla y óptima a la vez.
 
 # Referencias
 
