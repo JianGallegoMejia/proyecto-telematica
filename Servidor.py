@@ -10,7 +10,7 @@ log = open("log.txt", 'w')
 servidor = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Definimos la dirección IP y el puerto del servidor
-ip_servidor = '3.144.3.31'
+ip_servidor = '0.0.0.0'
 puerto_servidor = 8501
 
 # Enlazamos el socket al servidor
