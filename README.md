@@ -3,7 +3,7 @@ Juan Ramírez Ramírez
 Jian Carlo Gallego
 
 # Introducción
-A continuación se expone el desarrolloro de una api cliente-servidor hecha en python que permite realizar peticiones GET, HEAD y POST en la versión 1.1 de HTTP
+En este proyecto se presenta el desarrollo de una API cliente-servidor escrita en Python que permite enviar peticiones HTTP en su versión 1.1. Esta API utiliza las librerías estándar de Python, como socket, os y thread, para implementar las operaciones GET, HEAD y POST. Además, se desplegó la API en AWS para garantizar su disponibilidad y escalabilidad. Esta herramienta es útil para realizar pruebas de integración y de regresión en aplicaciones web, y se explorarán algunos casos de prueba que muestran la funcionalidad de la API y su integración con otras herramientas.
 
 # Configuración
 
